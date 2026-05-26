@@ -19,7 +19,7 @@ load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-print("讀到的 TOKEN：", TOKEN)
+
 
 if not TOKEN:
     raise RuntimeError("找不到 DISCORD_TOKEN，請確認 .env 是否設定正確")
