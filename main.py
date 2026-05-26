@@ -37,14 +37,16 @@ FFMPEG_OPTIONS = {
 
 YTDLP_OPTIONS = {
     "format": "bestaudio/best",
-    "quiet": False,
-    "no_warnings": False,
-    "default_search": "ytsearch1:",
-    "ignoreerrors": False,
-    "extract_flat": False,
     "noplaylist": True,
-    "socket_timeout": 20,
+    "quiet": True,
+    "default_search": "ytsearch1:",
     "source_address": "0.0.0.0",
+
+    "extractor_args": {
+        "youtube": {
+            "player_client": ["android"]
+        }
+    }
 }
 
 
