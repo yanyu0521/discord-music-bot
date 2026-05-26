@@ -13,15 +13,9 @@ import yt_dlp
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import os
 
-BASE_DIR = Path(__file__).resolve().parent
-ENV_PATH = BASE_DIR / ".env"
-
-print("目前 main.py 所在資料夾：", BASE_DIR)
-print(".env 是否存在：", ENV_PATH.exists())
-print(".env 路徑：", ENV_PATH)
-
-load_dotenv(ENV_PATH)
+load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
