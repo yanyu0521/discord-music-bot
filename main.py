@@ -37,12 +37,14 @@ FFMPEG_OPTIONS = {
 
 YTDLP_OPTIONS = {
     "format": "bestaudio/best",
-    "quiet": True,
-    "no_warnings": True,
-    "default_search": "ytsearch1",
-    "ignoreerrors": True,
+    "quiet": False,
+    "no_warnings": False,
+    "default_search": "ytsearch1:",
+    "ignoreerrors": False,
     "extract_flat": False,
-    "noplaylist": False,
+    "noplaylist": True,
+    "socket_timeout": 20,
+    "source_address": "0.0.0.0",
 }
 
 
